@@ -16,7 +16,7 @@
     });
   }
 
-  const showUsers = () => {
+  const showMainContents = () => {
     doFetch('http://localhost:3000/?sleep=1&error=false');
     doFetch('http://localhost:3000/?sleep=1&error=true');
     doFetch('http://localhost:3000/?sleep=3000&error=false');
@@ -31,6 +31,6 @@
   }
 
   showHeader();
-  showUsers();
+  showMainContents();
   showFooter();
 }
