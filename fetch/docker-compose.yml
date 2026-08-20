@@ -1,0 +1,11 @@
+name: auth-basic
+
+services:
+  server:
+    image: node:26-alpine
+    working_dir: /app
+    command: ["node", "app.js"]
+    ports:
+      - 3000:3000
+    volumes:
+      - ./volumes/app:/app
